@@ -14,3 +14,7 @@ async def about():
 @app.get("/users/{user_id}")
 async def get_user(user_id: int):
     return {"user": user_id}
+
+@app.get("/users/search")
+async def search_user(query: str):
+    return {"query": query}
