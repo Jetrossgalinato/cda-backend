@@ -11,10 +11,10 @@ async def root():
 async def about():
     return {"message": "This is the about API!"}
 
+@app.get("/users/search")
+async def search_user(query: int):
+    return {"query": query}
+
 @app.get("/users/{user_id}")
 async def get_user(user_id: int):
     return {"user": user_id}
-
-@app.get("/users/search")
-async def search_user(query: str):
-    return {"query": query}
