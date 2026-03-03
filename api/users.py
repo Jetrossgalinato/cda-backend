@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-router = APIRouter(prefix="/users")
+router = APIRouter(prefix="/users" , tags=["Users"])
 
 @router.get("/search")
 async def search_user(query: int):
