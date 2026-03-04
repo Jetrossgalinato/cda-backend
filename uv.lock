@@ -90,6 +90,7 @@ dependencies = [
     { name = "fastapi-users", extra = ["sqlalchemy"] },
     { name = "psycopg2-binary" },
     { name = "python-dotenv" },
+    { name = "sqlalchemy" },
     { name = "uvicorn", extra = ["standard"] },
 ]
 
@@ -99,6 +100,7 @@ requires-dist = [
     { name = "fastapi-users", extras = ["sqlalchemy"], specifier = ">=15.0.4" },
     { name = "psycopg2-binary", specifier = ">=2.9.11" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
+    { name = "sqlalchemy", specifier = ">=2.0.47" },
     { name = "uvicorn", extras = ["standard"], specifier = ">=0.41.0" },
 ]
 
